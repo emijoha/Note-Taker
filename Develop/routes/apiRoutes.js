@@ -12,7 +12,6 @@ module.exports = app => {
   app.post("/api/notes", (req, res) => {
     noteData.push(req.body);
     console.log("Note saved!");
-    alert("Note saved!")
   });
 
   //  API DELETE Request, to delete a note 

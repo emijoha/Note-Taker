@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 // handle parseing with express
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static("public"));
 
 // require routes files
 require("./routes/apiRoutes")(app);
