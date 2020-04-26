@@ -3,16 +3,18 @@ let noteData = require("../db/db.json");
 const fs = require("fs");
 const path = require("path");
 
-const dbPath = path.join(__dirname, "../db/db.json");
-
 // export API routing
 module.exports = app => {
   // API GET Requests, to access all saved notes
   // Should read the `db.json` file and return all saved notes as JSON.
   app.get("/api/notes", (req, res) => {
-    
-    res.sendFile(dbPath);
-    
+    // const dbPath = path.join(__dirname, "../db/db.json");
+
+    // const noteData = fs.readFileSync(dbPath);
+
+    // // const notes = JSON.stringify(noteData);
+
+    res.json(noteData);
   });
 
   // API POST Requests, to save data sent to server
