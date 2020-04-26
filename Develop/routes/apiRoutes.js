@@ -1,5 +1,4 @@
 // load data
-let noteData = require("../db/db.json");
 const fs = require("fs");
 const path = require("path");
 
