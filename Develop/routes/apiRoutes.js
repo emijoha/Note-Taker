@@ -51,8 +51,9 @@ module.exports = app => {
                 if (err) throw err;
             });
 
-            res.sendFile(dbPath);
         });
+
+        res.sendFile(dbPath);
 
     });
 
