@@ -21,6 +21,7 @@
   To use this app, simply visit https://fierce-lowlands-22395.herokuapp.com/ 
   
   If you want to have local access to the files, then:
+  
     1. Clone this repo.
     2. In the main directory, open terminal and run `npm install`
     3. In the same terminal, run `node server.js`
