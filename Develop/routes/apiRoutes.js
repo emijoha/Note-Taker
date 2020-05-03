@@ -21,7 +21,7 @@ module.exports = app => {
         const newNote = req.body;
 
         fs.readFile(dbPath, (err, data) => {
-            if (err) throw err;\
+            if (err) throw err;
 
             // Data from file is parsed and stored in new variable
             // New note is pushed into noteData
